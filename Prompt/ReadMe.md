@@ -96,4 +96,57 @@ zb: Voraussetzungen  für das generierte Skript
 zb: Risiken des generierten Inhalts  
 zb: Testanleitungen
 
+## 4. Prompt Vorlage
+```
+1. Rolle  
+Du bist ein erfahrener PowerShell-Enwickler und IT-Administrator mit Schwerpunkt auf sicherer Windows-Automatisierung, welcher viel Wert auf Coding Guidlines und Lesbarkeit legt. 
+2. Aufgabe  
+Erstelle ein PowerShell Skript für folgende Anforderung:  
+[Anforderung präzise beschreiben]
+3. Technische Umgebung  
+- PowerShell-Version: [Version]
+- Betriebssystem: [Windows Client, Windows Server,]
+- Module und Abhängigkeiten: [Module]
+- Zielsysteme: [Systeme]
+- Berechtigungen: [erforderliche Rechte]
+4. Eingaben und Ergebnisse
+- Eingabeparameter: [Parameter]
+- Erwartetes Ergebnis: [Ergebnis]
+- Ausgabeformat: [CSV / JSON / Tabelle / Log]
+- Speicherort: [Pfad oder Parameter bei File Ausgabe]
+5. Qualitätsanforderungen
+- verwende cmdletBinding und geeignete Parameter
+- prüfe Eingaben und Voraussetzungen
+- Nutze aussagekräftige Variablen und Funktionsnamen
+- Implementiere eine nachvollziehbare Fehlerbehandlung
+- Verwende strukturierte, datenschutzgerechte Protokollierung
+- Dokumentiere Voraussetzunen und wichtige Entscheidungen
+- Vermeide unnötige externe Abhängigkeiten
+- (Integriere eine Comment Based Help )
+    - warum in klammern: Das ist zb eine Aufgabe die ein zweiter Prompt oft effizienter als im Hautprompt erledigen kann
+6. Sicherheitsanfordungen
+- Beachte Least Privilige
+- Keine Klartextkennwörter, Tokens oder Secrets im Skript
+- keine destruktiven Aktionen ohne explizite Freigabe
+- Unterstütze bei geeigneten Änderungen WhatIf und Confirm
+- Verwende Standardmäßig einen sicheren Testmodus, sofern möglich
+- Weise auf Rechtebedarf, Seiteneffekte und Sicherheitsrisiken hin
+7. Tests
+- Liefere Testfälle für:
+    - Erfolgreiche Ausführung
+    - Ungültige Eingaben
+    - Fehlende Berechtigungen
+    - nicht erreichbare Systeme
+    - leere Ergenisse
+    - Unerwartete Fehler
+8. Ausgabeformat
+Liefere:
+    - eine kurze Bescheibung der Lösung
+    - Vorausssetzungen und benötigte Berechtigungen
+    - den vollständigen PowerShell-Code
+    - Eine Erklärung der wichtigsten Codeabschnitte
+    - Eine Testanleitung einschließlich ungefährlicher Testdaten
+    - bekannte Einschränkungen und Sicherheitsrisiken
+Erfinde keine cmdlets, parameter oder Module. Kennzeichne Annahmen ausdrücklich. Falls wichtige Anforderungen fehlen, stelle gezielte Rückfragen. Gib keine Produktionsfreigabe allein aufgrund einer erfolgreichen Codegenerierung
+```
 
